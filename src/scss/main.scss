@@ -103,4 +103,54 @@ video {
 
 // ---------------------------------------------
 // Votre code ici :
+
+.marker .product-cart {
+  opacity: 0%;
+  transition: background-color 0.5s, opacity 0.5s;
+}
+.marker:hover .product-cart {
+  opacity: 100%;
+}
+
+.product-cart:hover {
+  background-color: #2c5192;
+}
+
+.pencil .product-cart {
+  opacity: 0%;
+  transition: opacity 0.2s, transform 0.5s, background-color 0.5s;
+  transform: translateY(-200%);
+}
+
+.pencil:hover .product-cart {
+  opacity: 100%;
+  transform: translateY(0%);
+}
+
+.pencil .product-cart:hover {
+  background-color: var(--blue);
+}
+
+.scissors {
+  transition: background-color 0.5s;
+}
+
+.scissors:hover {
+  background-color: var(--blue);
+}
+
+.scissors .product-title {
+  transition: color 0.5s;
+}
+
+.scissors:hover .product-title {
+  color: var(--white);
+}
+
+.scissors .product-price {
+  transition: color 0.5s;
+}
+.scissors:hover .product-price {
+  color: var(--gray);
+}
 // ---------------------------------------------
