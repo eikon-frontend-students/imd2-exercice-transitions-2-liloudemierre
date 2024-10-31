@@ -153,4 +153,54 @@ video {
 .scissors:hover .product-price {
   color: var(--gray);
 }
+
+.sketchbook .product-image {
+  overflow: hidden;
+}
+.sketchbook:hover .product-image img {
+  transform: scale(1.3);
+}
+.sketchbook .product-image img {
+  transition: transform 0.5s;
+}
+
+.glue .product-image {
+  overflow: hidden;
+}
+.glue .product-image img {
+  transition: filter 0.3s;
+  filter: blur(3);
+}
+
+.glue:hover .product-image img {
+  filter: blur(0);
+}
+
+.share .share-list .share-icon {
+  opacity: 0%;
+  transition: opacity 0.5s, transform 0.5s;
+  transform: translateY(-200%);
+}
+.share:hover .share-list .share-icon {
+  opacity: 100%;
+  transform: translateY(0%);
+}
+
+.share:hover .share-list .share-icon:nth-child(2) {
+  opacity: 100%;
+  transform: translateY(0%);
+}
+
+.share .share-list .share-icon:nth-child(2) {
+  transition: opacity 0.5s 0.2s, transform 0.5s 0.2s;
+}
+
+.share:hover .share-list .share-icon:nth-child(3) {
+  opacity: 100%;
+  transform: translateY(0%);
+}
+
+.share .share-list .share-icon:nth-child(3) {
+  transition: opacity 0.5s 0.4s, transform 0.5s 0.4s;
+}
 // ---------------------------------------------
